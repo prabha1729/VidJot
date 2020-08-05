@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://user:user@cluster0.zaqrq.mongodb.net/rest?retryWrites=true&w=majority";
+const uri = MONGO_DB_URI;
 
 const bodyparser = require('body-parser');
 const methodOverride = require('method-override');
